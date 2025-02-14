@@ -5,6 +5,7 @@ import useInflation from "../features/plot/useInflation";
 import useUnemployment from "../features/plot/useUnemployment";
 import useIMACEC from "../features/plot/useIMACEC";
 import useTPM from "../features/plot/useTPM";
+import Button from "../ui/Button";
 function Forecast() {
   const { series } = useForecast();
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ function Forecast() {
       {series === "IMACEC" && <ForecastSeriesChart getData={useIMACEC} />}
       {series === "TPM" && <ForecastSeriesChart getData={useTPM} />}
 
-      <button onClick={handleClick}>Go Back</button>
+      <Button onClick={handleClick}>Go Back</Button>
     </div>
   );
 }

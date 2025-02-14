@@ -82,8 +82,10 @@ function ForecastSeriesChart({ getData }) {
   if (loadingForecast || loadingData) return <Spinner />;
   return (
     <>
-      <header>
-        {series} Forecast with {model} Model
+      <header className="flex justify-center items-center">
+        <h1 className="text-xl">
+          {series} {series} Forecast with {model} Model
+        </h1>
       </header>
       <div className="">
         <ResponsiveContainer width="100%" height={400}>

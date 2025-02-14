@@ -84,7 +84,7 @@ function ForecastSeriesChart({ getData }) {
     <>
       <header className="flex justify-center items-center">
         <h1 className="text-xl">
-          {series} {series} Forecast with {model} Model
+          {series} Forecast with {model} Model
         </h1>
       </header>
       <div className="">

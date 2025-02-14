@@ -12,6 +12,7 @@ function Plot() {
     <div className="grid grid-rows-2 grid-cols-[.3fr_1fr]">
       <div className="row-start-1 row-end-2 col-start-1 col-end-2">
         <label>Select Macroeconomic Variable</label>
+        <br />
         <Dropdown
           options={["Inflation", "Unemployment", "IMACEC", "TPM"]}
           state={series}
@@ -28,6 +29,7 @@ function Plot() {
       </div>
       <div className="row-start-2 row-end-3 col-start-1 col-end-2">
         <label>Select Model</label>
+        <br />
         <Dropdown
           options={["ARIMA", "SARIMA", "HoltWinters"]}
           state={model}
